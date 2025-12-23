@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>悪魔帝</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial Black', 'Impact', sans-serif;
+      color: white;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background-image: url('YOUR_IMAGE_URL_HERE');
+      /* ←ここに画像のURLを貼る（またはローカルパス） */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      /* 暗いオーバーレイで画像を強調 */
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 6rem;
+      color: #ff00ff;
+      /* 紫がかった魔帝の文字色 */
+      text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+      margin: 0;
+    }
+
+    p {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 0 15px #ff0000;
+      margin: 20px 0 0;
+    }
+
+    .subtext {
+      font-size: 2rem;
+      margin-top: 50px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>悪魔帝</h1>
+      <p>王始めに狙うのは...帝</p>
+      <div class="subtext">闇の支配者、降臨。</div>
+    </div>
+  </section>
+</body>
+
+</html>
